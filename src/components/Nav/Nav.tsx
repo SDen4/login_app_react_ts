@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 import styles from './Nav.module.css';
 
@@ -9,8 +10,14 @@ const Nav: React.FC = () => {
         <h1>lOGIN App</h1>
       </div>
       <div className={styles.btnsWrapper}>
-        <button type="button">Page1</button>
-        <button type="button">Page2</button>
+        <div className={styles.button}>
+          <NavLink to="/" exact>
+            Main Page
+          </NavLink>
+        </div>
+        <div className={styles.button}>
+          <NavLink to="/page2">Page2</NavLink>
+        </div>
       </div>
     </div>
   );
