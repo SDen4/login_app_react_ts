@@ -1,0 +1,83 @@
+.component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.97);
+}
+
+.window {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  width: 300px;
+  height: 250px;
+  padding: 10px 15px;
+
+  background-color: gainsboro;
+  border-radius: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.formUnit {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.formUnit label {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.formUnit input {
+  border: 0;
+  border-radius: 3px;
+  background-color: #fff;
+  padding: 5px;
+  font-size: 16px;
+
+}
+
+.btnsWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.btnsWrapper button {
+  padding: 0;
+  background-color: red;
+  color: #fff;
+  font-size: 18px;
+  border: 0;
+  border-radius: 5px;
+  outline: none;
+  transition: 0.3s;
+  padding: 5px 10px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.btnsWrapper button:last-child {
+  margin-right: 0;
+} 
+
+.btnsWrapper button:hover {
+  background-color: orange;
+} 
